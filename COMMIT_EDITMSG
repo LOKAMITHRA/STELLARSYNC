@@ -1,0 +1,31 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   image/Comet.jpg
+#	new file:   image/asteroid.jpg
+#	new file:   image/astronauts.jpg
+#	new file:   image/back.jpg
+#	new file:   image/earth.jpg
+#	new file:   image/home.jpg
+#	new file:   image/jupiter.jpg
+#	new file:   image/moon.jpg
+#	new file:   image/nebula.jpg
+#	new file:   image/rocket.jpg
+#	new file:   image/saturn.jpg
+#	new file:   image/space-bg.jpg
+#	new file:   image/sun.jpg
+#	new file:   particles/particles-config.js
+#	new file:   sounds/click.mp3
+#	new file:   sounds/match.mp3
+#	new file:   sounds/restart.mp3
+#	new file:   sounds/win.mp3
+#	new file:   sounds/wrong.mp3
+#	new file:   video/asteroid-hit.mp4
+#	new file:   video/meteor.mp4
+#
