@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StellarSync</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebulon</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <!-- Asteroid Impact Video (Hidden Initially) -->
+<video id="asteroid-video" class="hidden" autoplay muted>
+    <source src="assets/video/asteroid-hit.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Game Over Message -->
+<div id="game-over" class="hidden">
+    <h1>Game Over</h1>
+    <p>You ran out of time!</p>
+    <button onclick="restartGame()">Try Again</button>
+</div>
+<!-- Asteroid Impact Video (Hidden Initially) -->
+<video id="asteroid-video" class="hidden" autoplay muted>
+    <source src="assets/video/asteroid-hit.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Game Over Message -->
+<div id="game-over" class="hidden">
+    <h1>Game Over</h1>
+    <p>You ran out of time!</p>
+    <button onclick="restartGame()">Try Again</button>
+</div>
+
+    <video id="meteor-video" class="hidden" autoplay muted loop>
+        <source src="assets/video/meteor.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h2>Errors: <span id="errors">0</span></h2>
+    <h2>Time: <span id="timer">00:00</span></h2>
+
+    <!-- Game Board -->
+    <div id="board"></div>
+
+    <!-- Sound Effects -->
+    <audio id="match-sound" src="assets/sounds/match.mp3"></audio>
+    <audio id="wrong-sound" src="assets/sounds/wrong.mp3"></audio>
+    <audio id="win-sound" src="assets/sounds/win.mp3"></audio>
+    <audio id="restart-sound" src="assets/sounds/restart.mp3"></audio>
+
+
+    <!-- Restart Button -->
+    <button id="restart-btn" onclick="restartGame()" style="display:none">Restart Game</button>
+    <script>
+        function showMeteorShower() {
+            const video = document.getElementById('meteor-video');
+            video.classList.remove('hidden');
+        }
+    </script>
+
+
+    <!-- Game Script -->
+    <script src="cards.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-image: url("assets/image/space-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* Game board grid */
+#board {
+    width: 500px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+/* Card styling */
+.card {
+    width: 90px;
+    height: 128px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Restart button */
+#restart-btn {
+    background-color: #ff66cc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 12px rgba(255, 105, 180, 0.5);
+    transition: background 0.3s ease;
+}
+
+#restart-btn:hover {
+    background-color: #ff33aa;
+}
+#meteor-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+#asteroid-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 999;
+}
+
+#game-over {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
